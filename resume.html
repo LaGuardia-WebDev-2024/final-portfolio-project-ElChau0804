@@ -12,9 +12,9 @@
     <!-- ⬆⬆⬆⬆ Nav Bar -->
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="aboutme.html">About Me</a></li>
-      <li><a href="art.html">Art</a></li>
-      <li><a class="active" href="resume.html">Resume</a></li>
+      <li><a href="aboutme.html">Family</a></li>
+      <li><a href="art.html">Other</a></li>
+      <li><a class="active" href="resume.html">Friends</a></li>
       <li style="float: right">
         <a target="_blank" href=""
           ><img
@@ -31,6 +31,275 @@
       </li>
     </ul>
     <!-- ⬇⬇⬇⬇⬇⬇ Main Page Content -->
-    <h1>Resume</h1>
+    <h1>My Friends</h1>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Final Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    
+    <style>
+      /* Styling Only Related To THIS Page */
+      .parent-flex {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+        margin-bottom: 20px;
+        overflow: auto;
+        white-space: nowrap;
+        margin-bottom: 0;
+        padding-top: 40px;
+  
+      }
+
+      .parent-flex img {
+        margin: 10px;
+        height: 130px;
+        border-radius: 10px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+      }
+      
+      .parent-flex img:hover {
+        transform: translateY(-20px) scale(1.05);
+        box-shadow: 0 8px 16px rgba(0,0,0,0.2);      
+      }
+      
+      #painting-spotlight {
+        height: 500px;
+        margin-left: 30px;
+        margin-right: 30px;
+        background-color: pink;
+  color: white;
+  padding: 20px;
+  margin: 20px;
+  border: 3px solid white;
+  border-radius: 15px;
+  transition: 0.3s;
+      }
+   
+      #big-painting-div {
+        display: flex;
+        align-items: center;
+        justidy-content: center;
+      }
+      
+      #top-div-painting {
+        display:flex;
+        justify-content: space-between;
+        margin-right: 30px;
+        margin-left: 30px;
+        margin-bottom: 5px;
+        margin-top: 30px;
+        align-items: stretch;
+        height: 500px;
+      }
+      
+      #painting-info {
+        font-size: 40px;
+        
+      }
+      
+      #painting-title {
+        font-size: 60px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      
+      #info-div {
+        diplay: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-right: 20px
+      
+      }
+      
+    </style>
+  </head>
+  <body>
+  
+    
+<!-- ⬇⬇⬇⬇⬇⬇ Main Page Content -->
+   
+    <div id="top-div-painting">
+      <div id="info-div"> 
+        <div id="painting-title"
+             style="display: none"
+             >
+        Title of Piece  
+        </div>
+        <div id="painting-info"
+             style="display: none"
+             >
+        Piece Info
+      </div>
+      </div>
+      
+      <div id="big-painting-div">
+        <img id="painting-spotlight"
+             style="display: none"
+             src="">
+      </div>
+    </div>
+    
+    
+    
+<!-- Scroll paintings bottom -->
+    <div class="parent-flex fade-in">
+      <img
+           id="birthday-art" class="tiny-painting"
+           src="https://github.com/LaGuardia-WebDev-2024/final-portfolio-project-ElChau0804/blob/main/images/0455C188-EDD1-485B-A41A-4C08026F1923_1_105_c.jpeg?raw=true"
+           data-title="My trio"
+           data-info="halloween party yay"
+      />
+      <img
+           id="blue-art" class="tiny-painting"
+        src="https://github.com/LaGuardia-WebDev-2024/final-portfolio-project-ElChau0804/blob/main/images/2BC5E53D-FFCC-4BEE-AC83-32E7E7929A3A_1_105_c.jpeg?raw=true"
+           data-title="My birthday"
+           data-info="My closest friends dinner with Michael, Emily, Rayyan, JJ, Jamie and ChuChu"
+      />
+      <img
+           id="candle-art" class="tiny-painting"
+        src="https://github.com/LaGuardia-WebDev-2024/final-portfolio-project-ElChau0804/blob/main/images/2F700FC1-8174-40EC-8EE2-A984F537A985_1_105_c.jpeg?raw=true"
+           data-title="Urinetown"
+           data-info="Jamie, JJ and I going to watch Agnes perform"
+      />
+      <img
+           id="beach-art" class="tiny-painting"
+        src="https://github.com/LaGuardia-WebDev-2024/final-portfolio-project-ElChau0804/blob/main/images/33EC0263-CD4E-4C17-AB6F-41E614B1F145_1_105_c.jpeg?raw=true"
+           data-title="DC Mini"
+           data-info="My volleyball team :3"
+      />
+      <img
+           id="tea-art" class="tiny-painting"
+        src="https://github.com/LaGuardia-WebDev-2024/final-portfolio-project-ElChau0804/blob/main/images/79F55180-7EC6-4E57-9C6F-68D1C83B08DC_4_5005_c.jpeg?raw=true"
+           data-title="Photobooth"
+           data-info="Me and Jamie Yearbook class"
+      />
+      <img
+           id="cake-art" class="tiny-painting"
+        src="https://github.com/LaGuardia-WebDev-2024/final-portfolio-project-ElChau0804/blob/main/images/7B58ABA9-3DE4-43AF-B627-9F0DC31A31E6_1_105_c.jpeg?raw=true"
+           data-title="Volleyball Ritual"
+           data-info="Recurring picture of JJ and one of my coaches"
+      />
+      <img
+           id="fish-art" class="tiny-painting"
+        src="https://github.com/LaGuardia-WebDev-2024/final-portfolio-project-ElChau0804/blob/main/images/BB54A867-32CA-4B20-86B0-88FE6061A45B_1_105_c.jpeg?raw=true"
+           data-title="Yearbook Trip"
+           data-info="Me eating Chris and Ethan, Arielle taking photo"
+      />
+      <img
+           id="popsicle-art" class="tiny-painting"
+        src="https://github.com/LaGuardia-WebDev-2024/final-portfolio-project-ElChau0804/blob/main/4A26C1BB-8A0F-4B3B-9DA8-06E94254BE96_1_105_c.jpeg?raw=true"
+           data-title="AI baby shirts"
+           data-info="Stud Jamie and El"
+      />
+      <img
+           id="grandma-art" class="tiny-painting"
+        src="https://github.com/LaGuardia-WebDev-2024/final-portfolio-project-ElChau0804/blob/main/59C606FB-4F96-4029-88B0-F6E455CC1F41_1_105_c.jpeg?raw=true"
+           data-title="Pear Picking"
+           data-info="Princess dad"
+      />
+      <img
+           id="1984-art" class="tiny-painting"
+        src="https://github.com/LaGuardia-WebDev-2024/final-portfolio-project-ElChau0804/blob/main/images/23B94CEA-E4C2-413F-B59A-E9A678943E48_4_5005_c.jpeg?raw=true"
+           data-title="Halloween Pizza"
+           data-info="Oscar and JJ after da party"
+      />
+      <img
+           id="train-art" class="tiny-painting"
+        src="https://github.com/LaGuardia-WebDev-2024/final-portfolio-project-ElChau0804/blob/main/images/2D9F0AB9-B3EF-4BE4-ADB0-755532A1A60F_1_105_c.jpeg?raw=true"
+           data-title="Open Gym"
+           data-info="Me and baby Erika"
+      />
+      <img
+           id="itacoa-art" class="tiny-painting"
+        src="https://github.com/LaGuardia-WebDev-2024/final-portfolio-project-ElChau0804/blob/main/images/4F6A76DC-2B75-4304-8DBE-689CE65A5055_1_105_c.jpeg?raw=true"
+           data-title="Chinatown Store"
+           data-info="Wren Poo"
+      />
+      <img
+           id="apple-art" class="tiny-painting"
+        src="https://github.com/LaGuardia-WebDev-2024/final-portfolio-project-ElChau0804/blob/main/images/7B01B3AE-98FB-4937-B1F9-9BE56B4B0149_1_105_c.jpeg?raw=true"
+           data-title="Michaels Birthday Party"
+           data-info="Michael...so kawaii"
+      />
+      <img
+           id="me-art" class="tiny-painting"
+        src="https://github.com/LaGuardia-WebDev-2024/final-portfolio-project-ElChau0804/blob/main/images/85AE0EF4-2143-455C-8540-C77347276E38_1_105_c.jpeg?raw=true"
+           data-title="Volleyball Tourney"
+           data-info="Me and Michael doing media day poses"
+      />
+      <img
+           id="colorful-art" class="tiny-painting"
+        src="https://github.com/LaGuardia-WebDev-2024/final-portfolio-project-ElChau0804/blob/main/images/EB7B1482-0004-4319-91EB-D03E3529E8C9_4_5005_c.jpeg?raw=true"
+           data-title="Commitment Day"
+           data-info="Me, Chris and Sasha outside the school"
+      />
+      <img
+           id="b&w-art" class="tiny-painting"
+        src="https://github.com/LaGuardia-WebDev-2024/final-portfolio-project-ElChau0804/blob/main/images/FA4EA82C-0E07-43CE-9139-81B7DD663AF7_1_105_c.jpeg?raw=true"
+           data-title="Isabelles Birthday"
+           data-info="Isabelle with the shirt I bought her"
+      />
+      <img
+           id="clown-art" class="tiny-painting"
+        src="https://github.com/LaGuardia-WebDev-2024/final-portfolio-project-ElChau0804/blob/main/3C9554A6-B6DA-420B-B49E-C9D6D33B632E_1_105_c.jpeg?raw=true"
+           data-title="Train"
+           data-info="Keem takes yet another photo of me sleeping on the train"
+      />
+      <img
+           id="aquarium-art" class="tiny-painting"
+        src="https://github.com/LaGuardia-WebDev-2024/final-portfolio-project-ElChau0804/blob/main/ED832664-B14B-4C44-928B-78E524F1D2D2_1_105_c.jpeg?raw=true"
+           data-title="Yearbook class"
+           data-info="Chris and Jamie take a pic for me while I'm out with a broken ankle"
+      />
+    
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+     $(document).ready(function () {
+    $(".tiny-painting").click(function () {
+      const newSrc = $(this).attr("src");
+      const newTitle = $(this).attr("data-title");
+      const newInfo = $(this).attr("data-info");
+
+      $("#painting-spotlight").fadeOut(400, function () {
+        $(this).attr("src", newSrc).fadeIn(400);
+      });
+
+      $("#painting-title").fadeOut(400, function () {
+        $(this).text(newTitle).fadeIn(400);
+      });
+
+      $("#painting-info").fadeOut(400, function () {
+        $(this).html(newInfo).fadeIn(400);
+      });
+    });
+  });
+
+  window.addEventListener('DOMContentLoaded', () => {
+    const fadeElems = document.querySelectorAll('.fade-in');
+    fadeElems.forEach((el, i) => {
+      setTimeout(() => {
+        el.classList.add('visible');
+      }, i * 300); 
+    });
+  });
+
+    </script>
+  </body>
+</html>
+
+
+
+
   </body>
 </html>
